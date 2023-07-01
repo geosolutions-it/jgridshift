@@ -16,11 +16,12 @@
   </properties>
 
   <distributionManagement>
-    <repository>
+   <repository>
+      <uniqueVersion>false</uniqueVersion>
       <id>nexus</id>
-      <name>OSGeo GeoServer Release Repository</name>
-      <url>https://repo.osgeo.org/repository/Geoserver-releases/</url>
-    </repository>
+      <name>OSGeo Release Repository</name>
+      <url>https://repo.osgeo.org/repository/geotools-releases/</url>
+    </repository> 
   </distributionManagement>
 
   <modules>
