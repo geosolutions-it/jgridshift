@@ -346,7 +346,35 @@ public class GridShiftFile implements Serializable {
         }
         return sub;
     }
-    
+
+    /**
+    * @return the semi major axis of the from ellipsoid
+    */
+    public double getFromSemiMajorAxis() {
+        return fromSemiMajorAxis;
+    }
+
+    /**
+     * @return the semi minor axis of the from ellipsoid
+     */
+    public double getFromSemiMinorAxis() {
+        return fromSemiMinorAxis;
+    }
+
+    /**
+     * @return the semi major axis of the to ellipsoid
+     */
+    public double getToSemiMajorAxis() {
+        return toSemiMajorAxis;
+    }
+
+    /**
+     * @return the semi minor axis of the to ellipsoid
+     */
+    public double getToSemiMinorAxis() {
+        return toSemiMinorAxis;
+    }
+
     public boolean isLoaded() {
         return (topLevelSubGrid != null);
     }
