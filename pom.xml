@@ -7,7 +7,7 @@
   <groupId>it.geosolutions.jgridshift</groupId>
   <artifactId>jgridshift</artifactId>
   <packaging>pom</packaging>
-  <version>1.3</version>
+  <version>1.3.1</version>
 
   <properties>
     <maven.compiler.target>6</maven.compiler.target>
@@ -17,17 +17,10 @@
 
   <distributionManagement>
     <repository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>osgeo</id>
-      <name>Open Source Geospatial Foundation - WebDAV upload</name>
-      <url>dav:http://download.osgeo.org/upload/geotools/</url>
+      <id>nexus</id>
+      <name>OSGeo GeoServer Release Repository</name>
+      <url>https://repo.osgeo.org/repository/Geoserver-releases/</url>
     </repository>
-    <snapshotRepository>
-      <id>boundless</id>
-      <uniqueVersion>false</uniqueVersion>
-      <name>Boundless Snapshot Repository</name>
-      <url>https://repo.boundlessgeo.com/snapshot/</url>
-    </snapshotRepository>
   </distributionManagement>
 
   <modules>
